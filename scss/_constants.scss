@@ -1,0 +1,100 @@
+/*--Color Variations--*/
+$white: #FFFFFF;
+
+$black: #000000;
+$black-80: #3F4444;
+$black-60: #565C5D;
+$black-40: #6C7576;
+
+
+$l-gray: #F7F7F8;
+$m-gray: #DDDDDD;
+$gray: #54565B;
+$h-gray: #1d1d1d;
+
+/*--ScalaBull--*/
+$purple: #D71159;
+$navy: #071A5F;
+$navy-80: #0047BA;
+$orange: #EB642E;
+$l-blue: #F5F8FB;
+$red: #D71159;
+$green: #52A295;
+$blue: $navy-80;
+$yellow: #FFB603;
+
+$aqua: aqua;
+
+
+/*--Colors by Use--*/
+// General
+$color-primary: $navy; 
+$color-secondary: $navy;
+
+// Buttons
+$primary-button: $orange;
+$primary-button-hover: $red;
+
+// Typography
+$primary-heading: $navy;
+$reverse-heading: $white;
+
+$primary-text: $black-80;
+$secondary-text:  $black;
+
+// Interactive
+$primary-link: $navy;
+$primary-link-hover: lighten($primary-link, 15%);
+
+
+/*--Font Families--*/
+$font-family: 'Roboto', sans-serif;;
+$heading-font-family: 'Roboto', sans-serif;;
+
+
+/*--Font Sizes and Weights--*/
+$base-font-size: 18px;
+$base-font-size-large: 20px;
+$base-font-size-medium: 17px;
+$base-font-size-small: 16px;
+$base-font-size-xsmall: 15px;
+
+$base-line-height: 28px;
+
+$font-weight-light: 300;
+$font-weight-normal: 400;
+
+$font-weight-semi-bold: 500;
+$font-weight-medium:500;
+
+$font-weight-bold: 700;
+$font-weight-extra-bold: 900;
+$font-weight-strong: strong;
+
+
+/*--Breakpoints to be used with include-media
+    Example Css: http://include-media.com/#features --*/
+$mobile: 320px;
+$mobile-l: 640px;
+$tablet: 768px; /*-init 768px-*/
+$tablet-m: 960px;
+$tablet-l: 1024px;
+$desktop: 1280px;
+$max-site-width: 100%;
+
+$breakpoints: (
+  'mobile': $mobile,
+  'mobile-l': $mobile-l,
+  'tablet': $tablet,
+  'tablet-m': $tablet-m,
+  'tablet-l': $tablet-l,
+  'desktop': $desktop,
+  'max-site-width': $max-site-width
+);
+
+
+/*--Spacing--*/
+$global-padding: 7.5% 10%;
+$mobile-gutter: 5%;
+$container-width: 1200px;
+$global-border-radius: 12px;

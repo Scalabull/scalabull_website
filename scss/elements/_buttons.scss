@@ -1,0 +1,107 @@
+/*=======================================*/
+/* ----Buttons Styling----*/
+/*=======================================*/
+
+.btn,
+input[type='button'],
+input[type='submit'],
+input[type='reset'] {
+  display: inline-block;
+  padding: 10px 26px;
+  margin: 5px 8px 10px 0;
+  font-weight: $font-weight-medium;
+  font-family: $font-family;
+  line-height: 24px;
+  text-align: center;
+  text-decoration: none;
+  color: $white;
+  background-color: $primary-button;
+  background: linear-gradient(145deg, $orange 0%, darken($red, 1%) 100%);
+  font-size: $base-font-size-large;
+  letter-spacing: -0.02em;
+  transition: background-color ease .4s;
+  border: 1px solid transparent;
+  @include border-radius(8px);
+  transition: all ease .3s;
+  transition-property: all;
+  transition-duration: 0.5s;
+
+  &:after {
+    content:"›";
+    padding-left: 8px;
+    font-weight: $font-weight-extra-bold;
+    font-size: $base-font-size-large + 2;
+    display: inline-block;
+  }
+
+  @include media('<tablet') {
+    padding: 10px 26px;
+    font-size: $base-font-size - 1;
+  }
+
+  &:hover {
+    background-color: $primary-button-hover;
+    background: linear-gradient(145deg, $red 0%, darken($orange, 1%) 100%);
+    text-decoration: none;
+  }
+
+  &:focus {
+    text-decoration: none;
+  }
+
+  &:active {
+    background-color: $black;
+    color: $white;
+  }
+
+  &.btn-secondary {
+    background-color: $orange;
+    background: linear-gradient(145deg, lighten($orange, 5%) 0%, darken($orange, 10%) 100%);
+    border: 1px solid $orange;
+    box-shadow: none;
+
+    &:hover {
+      background-color: darken($orange, 5%);
+      background: linear-gradient(145deg, darken($orange, 5%) 0%, lighten($orange, 10%) 100%);
+      color: $white;
+      border-color: transparent;
+    }
+
+    &:active {
+      background-color: $black-80;
+      color: $white;
+    }
+  }
+
+  &.btn-solid {
+    background-color: $blue;
+    background: linear-gradient(145deg, $blue 0%, darken($blue, 4%) 100%);
+
+    &:hover {
+      background-color: $blue;
+      background: linear-gradient(145deg, $blue 0%, $navy 100%);
+    }
+  }
+
+  &.btn-lg {
+    font-size: $base-font-size-large;
+    padding: 14px 22px;
+
+    @include media('<tablet') {
+      font-size: $base-font-size-large - 2;
+    }
+  }
+
+  &.btn-sm {
+    font-size: $base-font-size-small;
+    padding: 8px 12px;
+  }
+
+  &.btn-block {
+    display: block;
+  }
+
+  &.btn-transparent {
+    background-color: transparent;
+  }
+}

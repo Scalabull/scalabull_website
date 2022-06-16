@@ -1,0 +1,113 @@
+/*--Layout: Full Width: Panel--*/
+.panel {
+  margin: 0;
+  padding: 65px 0;
+  position: relative;
+
+  @include media('<tablet-m') {
+    padding: 40px 0;
+  }
+
+  &.panel-hero {
+    padding: 60px 0;
+
+    @include media('<tablet-l') {
+      padding: 60px 0 60px 0;
+
+      .row {
+        margin-left: 0;
+        margin-right: 0;
+      }
+    }
+
+    h1, h3,  h5, p, img {
+      animation-duration: 1.5s;
+      animation-fill-mode: both;
+      animation-name: fadeIn;
+    }
+  }
+
+  &.panel-primary {
+    background-color: $white
+  }
+
+  &.panel-secondary {
+    background-color: $l-blue;
+  }
+
+  &.panel-gradient {
+    background-color: $l-blue;
+    background: linear-gradient(180deg, $l-blue 0%, $white 100%);
+  }
+
+  &.panel-small {
+    padding: 30px 0;
+  }
+
+  &.panel-no-bottom-padding {
+    padding-bottom: 0;
+  }
+
+  &.panel-no-top-padding {
+    padding-top: 0;
+  }
+
+  &.panel-no-padding {
+    padding: 0;
+  }
+
+  &.panel-no-bottom-margin {
+    margin-bottom: 0;
+  }
+
+  &.panel-no-margin {
+    margin: 0;
+  }
+
+  &.has-decorative-dots {
+    padding-top: 140px;
+    background-image: url(images/bg-decorative-dots.png);
+    background-repeat: no-repeat;
+    background-size: 1200px;
+    background-position: 50% -40%;
+
+    @include media('<tablet-l') {
+      padding-top: 60px;
+      background-size: 1000px;
+      background-position: 50% 0;
+    }
+  }
+
+  &.has-angled-edge-bottom {
+    @include angle(after);
+    margin-bottom: 60px;
+
+    @include media('<=tablet-m') {
+      margin-bottom: 40px;
+    }
+  }
+
+  &.has-angled-edge-bottom-reverse {
+    @include angle(after, true);
+  }
+
+  &.has-angled-edge-top {
+    @include angle(before);
+  }
+
+  &.has-angled-edge-top-reverse {
+    @include angle(before, true);
+  }
+
+  &.has-angled-edge-both {
+    @include angle(both);
+  }
+
+  &.has-angled-edge-both-reverse {
+    @include angle(both, true);
+  }
+}
+
+
+
+

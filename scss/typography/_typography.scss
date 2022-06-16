@@ -1,0 +1,224 @@
+/*=======================================*/
+/* ----Typography and General Styling----*/
+/*=======================================*/
+@import 'links';
+@import 'headings';
+
+/*--Typography: Paragraph--*/
+p {
+  font-size: $base-font-size;
+  font-family: $font-family;
+  color: $primary-text;
+  padding: 0 0 10px 0;
+
+  @include media('<tablet') {
+    font-size: $base-font-size - 1;
+  }
+
+  &:empty {
+    margin: 0;
+    padding: 0;
+    height: 1px;
+  }
+
+  & strong {
+    font-weight: $font-weight-medium;
+    a {
+      font-weight: $font-weight-medium;
+    }
+  }
+}
+
+/*--Typography: Font Size--*/
+.text-lead {
+  font-size: 22px;
+  line-height: 32px;
+  font-weight: $font-weight-normal;
+  letter-spacing: -0.01em;
+
+  @include media('<tablet') {
+      font-size: 18px;
+      line-height: 26px;
+  }
+}
+
+.text-small { 
+  font-size: $base-font-size-small; 
+}
+
+.text-medium { 
+  font-size: $base-font-size-medium; 
+}
+
+.text-large { 
+  font-size: $base-font-size-large;
+  line-height: 30px;
+}
+
+
+/*--Typography: Font Weight--*/
+.font-light {
+  font-weight: $font-weight-light;
+}
+
+.font-normal {
+  font-weight: $font-weight-normal;
+}
+
+.font-medium {
+  font-weight: $font-weight-medium;
+}
+
+.font-bold, .font-strong {
+  font-weight: $font-weight-extra-bold;
+
+  strong {
+    font-weight: $font-weight-bold;
+  }
+}
+
+
+/*--Typography: Definition List--*/
+dl {
+  margin-bottom: 20px;
+  font-size: $base-font-size;
+}
+
+dt, dd {
+  line-height: $base-line-height;
+  padding-bottom: 8px;
+}
+
+dt {
+  font-weight: bold
+}
+
+dd {
+  margin-left: 0
+}
+
+@include media('>tablet') { 
+  .dl-horizontal dt {
+    float: left;
+    width: 160px;
+    overflow: hidden;
+    clear: left;
+    text-align: right;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .dl-horizontal dd {
+    margin-left: 180px
+  }
+
+  .dl-horizontal dd:before, .dl-horizontal dd:after {
+    display: table;
+    content: " ";
+  }
+
+  .dl-horizontal dd:after {
+    clear: both
+  }
+
+  .dl-horizontal dd:before, .dl-horizontal dd:after {
+    display: table;
+    content: " ";
+  }
+
+  .dl-horizontal dd:after {
+    clear: both
+  }
+}
+
+/*--Typography: Blockquote--*/
+blockquote{
+  display:block;
+  padding: 20px 40px 20px 40px;
+  margin: 0 0 10px;
+  position: relative;
+  font-family: $font-family;
+  font-size: $base-font-size;
+  line-height: 1.2;
+  color: #eee;
+  text-align: justify;
+
+  @include media('<tablet') {
+    padding: 20px 20px;
+  }
+}
+
+blockquote p {
+  padding: 20px 14px;
+  margin: 0 10px;
+  font-size: $base-font-size-large;
+  font-weight: $font-weight-medium;
+  line-height: 145%;
+  text-align: center;
+  font-style: italic;
+  border-top: 2px solid $color-primary;
+  border-bottom: 2px solid $color-primary;
+  letter-spacing: -0.02em;
+
+  @include media('<tablet') {
+    font-size: 18px;
+  }
+}
+
+blockquote::before{
+  content: "\201C";
+  font-family: Georgia, serif;
+  font-size: 75px;
+  font-weight: bold;
+  color: $navy;
+  position: absolute;
+  left: 0px;
+  top: -10px;
+}
+
+blockquote::after{
+  content: "\201D";
+  font-family: Georgia, serif;
+  font-size: 75px;
+  font-weight: bold;
+  color: $navy;
+  position: absolute;
+  right: 0px;
+  bottom: -47px;
+}
+
+blockquote a{
+  text-decoration: none;
+  background: #eee;
+  cursor: pointer;
+  padding: 0 3px;
+  color: #c76c0c;
+}
+
+blockquote a:hover{
+ color: #666;
+}
+
+blockquote em{
+  font-style: italic;
+  line-height: 145%;
+  color: #777;
+  font-size: $base-font-size-small;
+  padding-top: 5px;
+}
+
+blockquote span.end-quote{
+  content: "\201C"; /*Unicode for Left Double Quote*/
+  font-family: Georgia, serif;
+  font-size: 60px;
+  font-weight: bold;
+  color: #fff;
+}
+
+blockquote strong {
+  font-style: italic;
+}
+
+.blockquote-inline-end-quote img{
+  display: none !important;
+}

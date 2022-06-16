@@ -1,0 +1,110 @@
+/*--Typography: Headings--*/
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  font-weight: $font-weight-medium;
+  font-family: $heading-font-family;
+  color: $primary-heading;
+  padding: 5px 0 0 0;
+  margin: 0 0 0.4rem 0;
+  line-height: 125%;
+  letter-spacing: -0.03em;
+}
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a, 
+.h1 a, .h2 a, .h3 a, .h4 a, .h5 a, .h6 a {
+  font-weight: $font-weight-medium;
+}
+
+h1, .h1 { 
+  font-size: 40px;
+  @include media('<tablet') {
+    font-size: 32px;
+  }
+ }
+h2, .h2 { 
+  font-size: 36px;
+  line-height: 130%;
+  
+  @include media('<tablet') {
+    font-size: 28px;
+  } 
+}
+h3, .h3 { 
+  font-size: 32px;
+  @include media('<tablet') {
+    font-size: 26px;
+  }
+}
+h4, .h4 { 
+  font-size: 28px;
+  @include media('<tablet') {
+    font-size: 24px;
+  }
+}
+h5, .h5 { 
+  font-size: 26px;
+  @include media('<tablet') {
+    font-size: 22px;
+  }
+}
+h6, .h6 { 
+  font-size: 22px;
+  margin: 0 0 0.1rem 0;
+  @include media('<tablet') {
+    font-size: 20px;
+  }
+}
+
+.heading-xxlarge, .headline-xxlarge {
+  font-weight: $font-weight-extra-bold;
+  font-size: 72px;
+  line-height: 120%;
+
+  @include media('<tablet') {
+    font-size: 36px;
+  }
+}
+
+.heading-xlarge, .headline-xlarge {
+  font-weight: $font-weight-extra-bold;
+  font-size: 50px;
+  line-height: 120%;
+
+  @include media('<tablet-m') {
+    font-size: 40px;
+  }
+
+  @include media('<tablet') {
+    font-size: 30px;
+  }
+}
+
+.heading-large, .headline-large {
+  font-size: 42px;  
+  line-height: 120%;
+  font-weight: $font-weight-extra-bold;
+
+  @include media('<tablet') {
+    font-size: 30px;
+  }
+}
+
+.heading-small, .heading-subhead, .headline-subhead {
+  font-size: 32px;
+  font-weight: $font-weight-bold;
+  line-height: 120%;
+
+  @include media('<tablet') {
+    font-size: 24px;
+  }
+}
+
+.heading-xsmall {
+  font-size: 20px;
+  //font-weight: $font-weight-bold;
+  line-height: 120%;
+
+  @include media('<tablet') {
+    font-size: 18px;
+  }
+}
+

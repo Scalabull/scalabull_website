@@ -1,0 +1,40 @@
+/*=======================================*/
+/* ----Cards----*/
+/*=======================================*/
+.card {
+  padding: 25px 20px;
+  background-color: $white;
+  border: 2px solid darken($l-blue, 4%);
+  @include border-radius($global-border-radius);
+  box-shadow: 0.5rem 0.5rem $l-blue;
+
+  h3, h4, h5, h6 {
+    font-weight: $font-weight-medium;
+  }
+}
+
+.card-asset {
+  position: relative;
+  background-color: $white;
+
+  transition: all ease .3s;
+  box-shadow: 0 4px 6px rgba(50,50,93,.10), 0 1px 3px rgba(0,0,0,.08);
+  @include border-radius(8px);
+
+  &:focus {
+    text-decoration: none;
+  }
+
+  figure {
+    @include ratio-box(16/9);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+
+  .asset-details {
+    padding: 15px 15px 12px;
+  }
+}

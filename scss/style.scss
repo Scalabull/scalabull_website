@@ -1,0 +1,47 @@
+@import 'vendor/include-media';
+
+/*--Resets and Setup--*/
+@import 'constants';
+@import 'mixins';
+@import 'sanitize';
+@import 'print';
+
+*, *:before, *:after { 
+  -webkit-box-sizing: border-box; 
+  -moz-box-sizing: border-box; 
+  box-sizing: border-box; 
+}
+
+body, p, a, h1, h2, h3, h4, h5, h6,
+small, input, button, ul, pre {   
+  color: $primary-text;
+  font-family: $font-family;
+  font-size: 100%;
+  font-weight: normal;
+  font-style: normal;
+  line-height: $base-line-height;
+
+  /* Smoothing */
+  text-rendering: optimizeLegibility;
+}
+
+
+@import 'typography/typography';
+@import 'utilities/utilities';
+@import 'grids/grids';
+
+@import 'elements/lists';
+@import 'elements/buttons';
+//@import 'elements/icons';
+@import 'elements/tables';
+@import 'elements/cards';
+//@import 'elements/modal';
+//@import 'forms/forms';
+
+
+@import 'layout/header';
+@import 'layout/section-panels';
+@import 'layout/footer';
+@import 'vendor/slick';
+@import 'animation/aos';
+

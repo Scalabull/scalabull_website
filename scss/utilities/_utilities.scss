@@ -1,0 +1,524 @@
+/*=======================================*/
+/* ----Utilities----*/
+/*=======================================*/
+
+.flex { display: flex; }
+
+@include media('<tablet') {
+  .m-flex {display: flex;}
+  .m-flex-column-reverse { flex-direction: column-reverse; }
+}
+
+.flex-row            { flex-direction: row; }
+.flex-row-reverse    { flex-direction: row-reverse; }
+.flex-column         { flex-direction: column; }
+.flex-column-reverse { flex-direction: column-reverse; }
+
+.flex-wrap           { flex-wrap: wrap; }
+.flex-nowrap         { flex-wrap: nowrap; }
+.flex-wrap-reverse   { flex-wrap: wrap-reverse; }
+
+/*- Horizontal Axis Space Distribution -*/
+.flex-justify-start    { justify-content: flex-start; }
+.flex-justify-end      { justify-content: flex-end; }
+.flex-justify-center   { justify-content: center; }
+.flex-justify-between  { justify-content: space-between; }
+.flex-justify-around   { justify-content: space-around; }
+
+
+/*- Vertical Axis Alignment -*/
+.flex-items-start      { align-items: flex-start; }
+.flex-items-end        { align-items: flex-end; }
+.flex-items-center     { align-items: center; }
+.flex-items-baseline   { align-items: baseline; }
+.flex-items-stretch    { align-items: stretch; }
+
+/*- Vertical Axis Space Distribution -*/
+.flex-content-start    { align-content: flex-start; }
+.flex-content-end      { align-content: flex-end; }
+.flex-content-center   { align-content: center; }
+.flex-content-between  { align-content: space-between; }
+.flex-content-around   { align-content: space-around; }
+.flex-content-stretch  { align-content: stretch; }
+
+.flex-order-1    { order: 1; }
+.flex-order-2    { order: 2; }
+.flex-order-none { order: inherit; }
+
+.flex-self-auto        { align-self: auto; }
+.flex-self-start       { align-self: flex-start; }
+.flex-self-end         { align-self: flex-end; }
+.flex-self-center      { align-self: center; }
+.flex-self-baseline    { align-self: baseline; }
+.flex-self-stretch     { align-self: stretch; }
+
+
+hr {
+  border: 0;
+  border-bottom: 1px solid rgba(0,0,0,.15);
+  height: 0;
+  padding: 0;
+  margin: 1.5em 0;
+}
+
+/*--Utilities: General--*/
+.hide, .hidden {
+  display: none !important;
+}
+
+.show, .block {
+  display: block !important
+}
+
+.inline {
+  display: inline;
+}
+
+.invisible {
+  visibility: hidden
+}
+
+.text-hide {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+
+.affix {
+  position: fixed
+}
+
+.noborder {
+  border: none !important;
+}
+
+/*--Utilities: Alignment--*/
+.aligncenter, .center {
+  @include center-block;
+}
+
+.alignleft, .floatleft {
+  float: left;
+  margin-right: 15px;
+
+  @include media('<tablet') {
+    margin-right: auto;
+  }
+}
+
+.alignright, .floatright {
+  float: right;
+  margin-left: 15px;
+
+  @include media('<tablet') {
+    margin-left: auto;
+  }
+}
+
+/*--Utilities: Text Alignment--*/
+.text-left{
+  text-align: left !important;
+}
+
+.text-center{
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text, justify.justify {
+  text-align: justify;
+}
+
+/*--Utilities: Text Treatment--*/
+.no-decoration, .no-decoration:hover {
+  text-decoration: none !important;
+}
+
+.text-underline {
+  text-decoration: underline;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+/*--General: Text Emphasis Styling--*/
+.text-orange {
+  color: $orange !important;
+}
+
+.text-yellow {
+  color: $yellow !important;
+}
+
+.text-red {
+  color: $red !important;
+}
+
+.text-green {
+  color: $green !important;
+}
+
+.text-gray {
+  color: #777 !important;
+}
+
+.text-d-gray {
+  color: $gray;
+}
+
+.text-white, .white {
+  color: #fff;
+
+  strong {
+    color: #fff !important;
+  }
+}
+.text-blue {
+  color: $blue;
+}
+
+.text-black {
+  color: $black;
+}
+
+/*--Utilities: Images --*/
+img, .img-responsive {
+  display: block;
+  vertical-align: middle;
+  max-width: 100%;
+  height: auto;
+  padding: 10px 0;
+}
+
+img.alignnone {
+  display: inline-block;
+}
+
+@include media('<tablet') {
+  img.alignnone {
+    display: block;
+  }
+
+  img {
+    display: block;
+    float: none;
+    @include center-block;
+  }
+}
+
+@include media('<tablet-m'){
+  img.alignleft, img.alignright {
+    display: block;
+    float: none;
+    @include center-block;
+  } 
+}
+
+
+.reverse-image {
+   transform: scaleX(-1);
+} 
+
+.img-rounded {
+  border-radius: 6px
+}
+
+.img-thumbnail {
+  display: inline-block;
+  height: auto;
+  max-width: 100%;
+  padding: 1px;
+  background-color: #ffffff;
+  border: 1px solid #eee;
+  border-radius: 4px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+
+  @include media('<tablet') {
+    display: block;
+  }
+}
+
+.img-circle {
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+}
+
+/*--Utilities: Accessibility--*/
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  border: 0;
+}
+
+/*--Utilities: Spacing Styling--*/
+$spaceamounts: (5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 75, 100); // Adjust this to include the pixel amounts you need.
+$sides: (top, bottom, left, right); // Leave this variable alone
+
+@each $space in $spaceamounts {
+  @each $side in $sides {
+    .margin-#{str-slice($side, 0, 1)}-#{$space} {
+      margin-#{$side}: #{$space}px !important;
+    }
+  
+    .padding-#{str-slice($side, 0, 1)}-#{$space} {
+      padding-#{$side}: #{$space}px !important;
+    }
+  }
+}
+
+@include media('<tablet') {
+  .m-no-t-padding {
+    padding-top: 0;
+  }
+  .m-no-l-padding {
+    padding-left: 0;
+  }
+  .m-no-r-padding {
+    padding-right: 0;
+  }
+}
+
+.w-40-percent {
+  width: 40%;
+
+  @include media('<tablet') {
+    width: 100%;
+  }
+}
+
+.w-50-percent {
+  width: 50%;
+  margin: auto;
+
+  @include media('<tablet') {
+    width: 100%;
+  }
+}
+
+.w-60-percent {
+  width: 60%;
+  margin: auto;
+
+  @include media('<tablet') {
+    width: 100%;
+  }
+}
+
+.w-65-percent {
+  width: 65%;
+  margin: auto;
+
+  @include media('<tablet') {
+    width: 100%;
+  }
+}
+
+.w-70-percent{
+  width: 75%;
+  margin: auto;
+
+  @include media('<tablet') {
+    width: 100%;
+  }
+}
+
+.w-75-percent {
+  width: 75%;
+  margin: auto;
+
+  @include media('<tablet') {
+    width: 100%;
+  }
+}
+
+
+.w-80-percent {
+  width: 80%;
+  margin: auto;
+
+  @include media('<tablet') {
+    width: 100%;
+  }
+}
+
+.w-90-percent {
+  width: 90%;
+  margin: auto;
+
+  @include media('<tablet') {
+    width: 100%;
+  }
+}
+
+.w-95-percent {
+  width: 95%;
+  margin: auto;
+
+  @include media('<tablet') {
+    width: 100%;
+  }
+}
+
+
+.has-top-divider, .border-top {
+  border-top: 1px solid $m-gray;
+}
+
+.has-bottom-divider, .border-bottom {
+  border-bottom: 1px solid $m-gray;
+}
+
+
+/*--Utilities: Responsive Embeds--*/
+.embed-responsive {
+  position: relative;
+  display: block;
+  height: 0;
+  padding: 0;
+  overflow: hidden
+}
+
+.embed-responsive .embed-responsive-item, .embed-responsive embed, .embed-responsive iframe, .embed-responsive object, .embed-responsive video {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0
+}
+
+.embed-responsive-16by9 {
+  padding-bottom: 56.25%
+}
+
+.embed-responsive-4by3 {
+  padding-bottom: 75%
+}
+
+
+/*--Utilities: Animation--*/
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/*--Utilities: Responsive Break--*/
+.rwd-break {
+  display: block;
+  @include media('<=tablet-m') {
+    display: none;
+  }
+}
+
+
+/*--Utilities: Mobile Specific Classes--*/
+@include media('<tablet') {
+  .m-image-width {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .m-text-center {
+    text-align: center;
+  }
+
+  .m-img-bg-cover {
+    background-size: cover !important;
+    background-position: 50% 50% !important;
+  }
+}
+
+.has-bg-img {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.box-padding {
+  padding: 20px 20px;
+
+  @include media('<tablet') {
+    padding: 10px 20px;
+  }
+
+  &.has-extra-padding {
+    padding: 30px 40px;
+
+    @include media('<tablet') {
+      padding: 20px 5px;
+    }
+  }
+}
+
+.box-padding-tb-only {
+  padding: 25px 0;
+
+  @include media('<tablet') {
+    padding: 15px 0;
+  }
+}
+
+.box-padding-lr-only {
+  padding: 0 20px;
+}
+
+/*-TBD-*/
+.has-bg-color {
+
+  &.bg-green {
+    background-color: $green;
+  }
+
+  &.bg-navy {
+    background-color: $navy;
+  }
+
+  &.bg-blue {
+    background-color: $blue;
+  }
+
+  &.bg-yellow {
+    background-color: $yellow;
+  }
+  
+  &.bg-green, &.bg-navy, &.bg-blue, &.bg-yellow {
+    h1, h2, h3 { 
+      color: $white;
+    }
+  }
+
+  &.bg-gray {
+    background: $l-gray;
+    background: linear-gradient(90deg, $l-gray 0%, lighten($l-gray, 5%) 100%);
+  }
+
+  &.bg-l-gray {
+    background: $l-gray;
+    background: linear-gradient(180deg, $l-gray 0%, lighten($l-gray, 4%) 100%);
+  }  
+}
+
+.has-gradient {
+  &.bg-blue {
+    background: $blue;
+    background: linear-gradient(90deg, $blue 0%, darken($blue, 5%) 100%);
+  }
+}

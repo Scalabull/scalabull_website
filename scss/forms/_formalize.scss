@@ -1,0 +1,226 @@
+// `UI Consistency
+//----------------------------------------------------------------------------------------------------
+form {
+  input[type="search"]::-webkit-search-decoration {
+    display: none;
+  }
+
+  ul {
+      margin: 0;
+  }
+
+  li {
+    list-style: none;
+  }
+
+  input,
+  button,
+  a.button,
+  select,
+  textarea {
+    // Suppress red glow that Firefox
+    // adds to form fields by default.
+    &:invalid {
+      border-color: $red;
+    }
+
+    // Add blue glow.
+    &:focus {
+
+      border-color: $aqua;
+      // for Opera
+      z-index: 1;
+    }
+  }
+
+  input[type="file"],
+  input[type="radio"],
+  input[type="checkbox"] {
+    &:focus,
+    &:active {
+      box-shadow: none;
+    }
+  }
+
+  button,
+  a.button,
+  input[type="reset"],
+  input[type="submit"],
+  input[type="button"] {
+    background-color: $white;
+    border: 2px solid $black;
+    box-shadow: none;
+
+
+    display: inline-block;
+    padding: 6px 18px;
+    margin: 0;
+    
+    font-weight: $font-weight-medium;
+    font-family: $font-family;
+    line-height: 24px;
+    text-align: center;
+    text-decoration: none;
+    color: $secondary-text;
+    font-size: $base-font-size-xsmall;
+    letter-spacing: -0.02em;
+
+    transition: background-color ease .4s;
+    @include border-radius(54px);
+    transition: all ease .1s;
+    transition-property: color;
+    transition-duration: 0.5s;
+    -webkit-appearance: none;
+    background-clip: padding-box;
+    cursor: pointer;
+    outline: 0;
+    overflow: visible;
+    width: auto;
+
+    &:hover {
+      background-color: $black;
+      color: $white;
+      border-color: transparent;
+      text-decoration: none;
+    }
+
+    &:active {
+      background-color: $black-80;
+      color: $white;
+    }
+
+
+    // Kill phantom spacing and dotted
+    // border that appears in Firefox.
+    &::-moz-focus-inner {
+      border: 0;
+      padding: 0;
+    }
+  }
+
+  textarea,
+  select,
+  input[type="date"],
+  input[type="datetime"],
+  input[type="datetime-local"],
+  input[type="email"],
+  input[type="month"],
+  input[type="number"],
+  input[type="password"],
+  input[type="search"],
+  input[type="tel"],
+  input[type="text"],
+  input[type="time"],
+  input[type="url"],
+  input[type="week"] {
+    box-sizing: border-box;
+    background-clip: padding-box;
+    @include border-radius(6px);
+    -webkit-appearance: none;
+    background-color: $white;
+    border: 1px solid $l-gray;
+    color: $primary-text;
+    outline: 0;
+    margin: 0;
+    padding: 9px 12px;
+    text-align: left;
+    font-family: $font-family;
+    font-size: $base-font-size-small;
+    height: 100%;
+    min-height: 36px;
+    vertical-align: top;
+
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.25);
+
+
+    &[disabled] {
+      background-color: #eee;
+    }
+  }
+
+  button[disabled],
+  input[disabled],
+  select[disabled],
+  select[disabled] option,
+  select[disabled] optgroup,
+  textarea[disabled],
+  a.button_disabled {
+    box-shadow: none;
+    -moz-user-select: -moz-none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+    color: #888;
+    cursor: default;
+  }
+
+  // Separate rule for Firefox.
+  // Separate rule for IE, too.
+  // Cannot stack with WebKit's.
+  input::-webkit-input-placeholder,
+  textarea::-webkit-input-placeholder {
+    color: #888;
+  }
+
+  input:-moz-placeholder,
+  textarea:-moz-placeholder {
+    color: #888;
+  }
+
+  input.placeholder_text,
+  textarea.placeholder_text {
+    color: #888;
+  }
+
+  textarea,
+  select[size],
+  select[multiple] {
+    height: auto;
+  }
+
+  // Set height back to normal,
+  // for Opera, WebKit, and IE.
+  select[size="0"],
+  select[size="1"] {
+    height: 1.8em;
+  }
+
+  select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding-right: 30px;
+    background-image: url("data:image/svg+xml,%3Csvg width='10' height='7' viewBox='0 0 10 7' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5.70711 5.79289C5.31658 6.18342 4.68342 6.18342 4.29289 5.79289L0.707108 2.20711C0.0771422 1.57714 0.523308 0.5 1.41421 0.5L8.58579 0.500001C9.47669 0.500001 9.92286 1.57714 9.29289 2.20711L5.70711 5.79289Z' fill='%23565C5D'/%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat, repeat;
+    background-position: 97% 50%;
+    background-size: 10px;
+
+    &:hover, &:active {
+      background-image: url("data:image/svg+xml,%3Csvg width='10' height='7' viewBox='0 0 10 7' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5.70711 5.79289C5.31658 6.18342 4.68342 6.18342 4.29289 5.79289L0.707108 2.20711C0.0771422 1.57714 0.523308 0.5 1.41421 0.5L8.58579 0.500001C9.47669 0.500001 9.92286 1.57714 9.29289 2.20711L5.70711 5.79289Z' fill='%2300ADBC'/%3E%3C/svg%3E%0A");
+    } 
+  }
+
+  textarea {
+    min-height: 40px;
+    overflow: auto;
+    resize: vertical;
+    width: 100%;
+  }
+
+  optgroup {
+    color: $black;
+    font-style: normal;
+    font-weight: normal;
+
+    // Font family repeated, for Firefox.
+    font-family: Arial, "Liberation Sans", FreeSans, sans-serif;
+
+    // Kill phantom spacing and dotted
+    // border that appears in Firefox.
+    &::-moz-focus-inner {
+      border: 0;
+      padding: 0;
+    }
+  }
+
+}

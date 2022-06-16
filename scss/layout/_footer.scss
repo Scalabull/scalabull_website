@@ -1,0 +1,28 @@
+footer {
+  background-color: $l-blue;
+  padding: 40px;
+  @include angle(before, true);
+  margin-top: 60px;
+
+  @include media('<=tablet-m') {
+    margin-top: 40px;
+  }
+
+  .logo {
+    border-bottom: 1px solid $navy;
+    padding: 30px 0 20px 0;
+
+    img {
+      max-width: 200px;
+    }
+  }
+
+  .contact {
+    display: flex;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+  }
+}

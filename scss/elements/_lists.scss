@@ -1,0 +1,55 @@
+/*=======================================*/
+/* ----List Styling----*/
+/*=======================================*/
+
+ul, ol {
+  font-family: $font-family;
+  line-height: $base-line-height;
+  color: $primary-text;
+}
+
+ol {
+  margin: 4px 0 5px 30px;
+  li {
+    list-style-type: decimal;
+    padding: 2px 0;
+    font-size: $base-font-size;
+
+    @include media('<tablet') {
+      font-size: $base-font-size - 1;
+
+    }
+  }
+}
+
+ul {
+  margin: 4px 0 5px 35px;
+  li {
+    list-style-type: disc;
+    padding: 2px 0;
+    font-size: $base-font-size;
+
+    @include media('<tablet') {
+      font-size: $base-font-size - 1;
+    }
+  }
+}
+
+
+/*--List: Decoration Classes--*/
+.list-unstyled, .list-unstyled>li {
+  padding-left: 0;
+  margin-left: 0;
+  list-style: none;
+}
+
+.list-inline {
+  padding-left: 0;
+  list-style: none;
+}
+
+.list-inline>li {
+  display: inline-block;
+  padding-right: 5px;
+  padding-left: 5px;
+}

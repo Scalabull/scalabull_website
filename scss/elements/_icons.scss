@@ -1,0 +1,428 @@
+/*=======================================*/
+/* ----Iconography----*/
+/*=======================================*/
+
+.icon {
+  margin:5px 10px;
+  display: inline-block;
+  content: '';
+  height: 40px;
+  width: 40px;
+  min-width: 40px;
+  background-repeat: no-repeat;
+  background-position: 0 0 !important;
+  background-size: contain;
+
+  &.icon-xs {
+    height: 24px;
+    width: 24px;
+    min-width: 24px;
+    margin: 0 4px;
+  }
+
+  &.icon-1-5x {
+    height: 60px;
+    width: 60px;
+    min-width: 60px;
+
+    @include media('<tablet') {
+      height: 50px;
+      width: 50px;
+      min-width: 50px;
+    }
+  }
+
+  &.icon-2x {
+    height: 80px;
+    width: 80px;
+    min-width: 80px;
+  }
+
+  &.icon-3x {
+    height: 160px;
+    width: 160px;
+    min-width: 160px;
+
+    @include media('<tablet') {
+      height: 90px;
+      width: 90px;
+      min-width: 90px;
+    }
+  }
+
+  &.icon-4x {
+    height: 160px;
+    width: 160px;
+    min-width: 160px;
+  }
+
+  &.icon-act-with-passion {
+    background-image: url(images/svg/icon-act-with-passion.svg)
+  }
+
+  &.icon-ai-robot {
+    background-image: url(images/svg/icon-ai-robot.svg)
+  }
+
+  &.icon-analytics-data-platform {
+    background-image: url(images/svg/icon-analytics-data-platform.svg)
+  }
+
+  &.icon-bar-chart {
+    background-image: url(images/svg/icon-bar-chart.svg)
+  }
+
+  &.icon-bar-chart-performance-increase {
+    background-image: url(images/svg/icon-bar-chart-performance-increase.svg)
+  }
+
+  &.icon-brain-continuous-learning {
+    background-image: url(images/svg/icon-brain-continuous-learning.svg)
+  }
+
+  &.icon-building-blocks {
+    background-image: url(images/svg/icon-building-blocks.svg)
+  }
+
+  &.icon-calendar-meeting {
+    background-image: url(images/svg/icon-calendar-meeting.svg)
+  }
+
+  &.icon-certification {
+    background-image: url(images/svg/icon-certification.svg)
+  }
+
+  &.icon-courses {
+    background-image: url(images/svg/icon-courses.svg)
+  }
+
+  &.icon-courses-alt {
+    background-image: url(images/svg/icon-courses-alt.svg)
+  }
+
+  &.icon-culture {
+    background-image: url(images/svg/icon-culture.svg)
+  }
+
+  &.icon-customer-support {
+    background-image: url(images/svg/icon-customer-support.svg)
+  }
+
+  &.icon-dei {
+    background-image: url(images/svg/icon-dei.svg)
+  }
+
+  &.icon-diversity {
+    background-image: url(images/svg/icon-diversity.svg)
+  }
+
+  &.icon-employee-recruiting-validated-check {
+    background-image: url(images/svg/icon-employee-recruiting-validated-check.svg)
+  }
+
+  &.icon-expertise-idea {
+    background-image: url(images/svg/icon-expertise-idea.svg)
+  }
+
+  &.icon-flash {
+    background-image: url(images/svg/icon-flash.svg)
+  }
+
+  &.icon-gamification {
+    background-image: url(images/svg/icon-gamification.svg)
+  }
+
+  &.icon-goals {
+    background-image: url(images/svg/icon-goals.svg)
+  }
+
+  &.icon-growth {
+    background-image: url(images/svg/icon-grow.svg)
+  }
+
+  &.icon-guide {
+    background-image: url(images/svg/icon-guide.svg)
+  }
+
+  &.icon-guide-road-path-journey {
+    background-image: url(images/svg/icon-guide-road-path-journey.svg)
+  }
+
+  &.icon-integration {
+    background-image: url(images/svg/icon-integration.svg)
+  }
+
+  &.icon-mobile {
+    background-image: url(images/svg/icon-mobile.svg)
+  }
+
+  &.icon-mobile-popup {
+    background-image: url(images/svg/icon-mobile-popup.svg)
+  }
+
+  &.icon-multiple-actions {
+    background-image: url(images/svg/icon-multiple-actions.svg)
+  }
+
+  &.icon-preference-controls {
+    background-image: url(images/svg/icon-preference-controls.svg)
+  }
+
+  &.icon-promote-program {
+    background-image: url(images/svg/icon-promote-program.svg)
+  }
+
+  &.icon-puzzle-piece {
+    background-image: url(images/svg/icon-puzzle-piece.svg)
+  }
+
+  &.icon-reminders-notifications {
+    background-image: url(images/svg/icon-reminders-notifications.svg)
+  }
+
+  &.icon-retention {
+    background-image: url(images/svg/icon-retention.svg)
+  }
+
+  &.icon-retention-woman-employee {
+    background-image: url(images/svg/icon-retention-woman-employee.svg)
+  }
+
+  &.icon-rocket {
+    background-image: url(images/svg/icon-rocket.svg)
+  }
+
+  &.icon-security-lock {
+    background-image: url(images/svg/icon-security-lock.svg)
+  }
+
+  &.icon-security-verified-badge {
+    background-image: url(images/svg/icon-security-verified-badge.svg)
+  }
+
+  &.icon-send-path-enroll {
+    background-image: url(images/svg/icon-send-path-enroll.svg)
+  }
+
+  &.icon-strategy {
+    background-image: url(images/svg/icon-strategy.svg)
+  }
+
+  &.icon-tape-ruler {
+    background-image: url(images/svg/icon-tape-ruler.svg)
+  }
+
+  &.icon-target-goal {
+    background-image: url(images/svg/icon-target-goal.svg)
+  }
+
+  &.icon-video-call-chat {
+    background-image: url(images/svg/icon-video-call-chat.svg)
+  }
+
+  &.icon-video-game-potion {
+    background-image: url(images/svg/icon-video-game-potion.svg)
+  }
+
+  &.icon-women-employees {
+    background-image: url(images/svg/icon-women-employees.svg)
+  }
+
+  &.icon-globe {
+    background-image: url(images/svg/icon-globe.svg)
+  }
+
+  &.icon-people {
+    background-image: url(images/svg/icon-people.svg)
+  }
+
+  &.icon-building-blocks-alt {
+    background-image: url(images/svg/icon-building-blocks-v2.svg)
+  }
+
+  &.icon-speakers {
+    background-image: url(images/svg/icon-chronus-speakers.svg)
+  }
+
+  &.icon-best-practices {
+    background-image: url(images/svg/icon-best-practices.svg)
+  }
+
+  &.icon-buildings {
+    background-image: url(images/svg/icon-buildings.svg)
+  }
+  
+
+  /* White Variations */
+  &.icon-white-act-with-passion {
+    background-image: url(images/svg/icon-white-act-with-passion.svg)
+  }
+
+  &.icon-white-ai-robot {
+    background-image: url(images/svg/icon-white-ai-robot.svg)
+  }
+
+  &.icon-white-analytics-data-platform {
+    background-image: url(images/svg/icon-white-analytics-data-platform.svg)
+  }
+
+  &.icon-white-bar-chart {
+    background-image: url(images/svg/icon-white-bar-chart.svg)
+  }
+
+  &.icon-white-bar-chart-performance-increase {
+    background-image: url(images/svg/icon-white-bar-chart-performance-increase.svg)
+  }
+
+  &.icon-white-brain-continuous-learning {
+    background-image: url(images/svg/icon-white-brain-continuous-learning.svg)
+  }
+
+  &.icon-white-building-blocks {
+    background-image: url(images/svg/icon-white-building-blocks.svg)
+  }
+
+  &.icon-white-calendar-meeting {
+    background-image: url(images/svg/icon-white-calendar-meeting.svg)
+  }
+
+  &.icon-white-certification {
+    background-image: url(images/svg/icon-white-certification.svg)
+  }
+
+  &.icon-white-courses {
+    background-image: url(images/svg/icon-white-courses.svg)
+  }
+
+  &.icon-white-courses-alt {
+    background-image: url(images/svg/icon-white-courses-alt.svg)
+  }
+
+  &.icon-white-culture {
+    background-image: url(images/svg/icon-white-culture.svg)
+  }
+
+  &.icon-white-customer-support {
+    background-image: url(images/svg/icon-white-customer-support.svg)
+  }
+
+  &.icon-white-dei {
+    background-image: url(images/svg/icon-white-dei.svg)
+  }
+
+  &.icon-white-diversity {
+    background-image: url(images/svg/icon-white-diversity.svg)
+  }
+
+  &.icon-white-employee-recruiting-validated-check {
+    background-image: url(images/svg/icon-white-employee-recruiting-validated-check.svg)
+  }
+
+  &.icon-white-expertise-idea {
+    background-image: url(images/svg/icon-white-expertise-idea.svg)
+  }
+
+  &.icon-white-flash {
+    background-image: url(images/svg/icon-white-flash.svg)
+  }
+
+  &.icon-white-gamification {
+    background-image: url(images/svg/icon-white-gamification.svg)
+  }
+
+  &.icon-white-goals {
+    background-image: url(images/svg/icon-white-goals.svg)
+  }
+
+  &.icon-white-growth {
+    background-image: url(images/svg/icon-white-grow.svg)
+  }
+
+  &.icon-white-guide {
+    background-image: url(images/svg/icon-white-guide.svg)
+  }
+
+  &.icon-white-guide-road-path-journey {
+    background-image: url(images/svg/icon-white-guide-road-path-journey.svg)
+  }
+
+  &.icon-white-integration {
+    background-image: url(images/svg/icon-white-integration.svg)
+  }
+
+  &.icon-white-mobile {
+    background-image: url(images/svg/icon-white-mobile.svg)
+  }
+
+  &.icon-white-mobile-popup {
+    background-image: url(images/svg/icon-white-mobile-popup.svg)
+  }
+
+  &.icon-white-multiple-actions {
+    background-image: url(images/svg/icon-white-multiple-actions.svg)
+  }
+
+  &.icon-white-preference-controls {
+    background-image: url(images/svg/icon-white-preference-controls.svg)
+  }
+
+  &.icon-white-promote-program {
+    background-image: url(images/svg/icon-white-promote-program.svg)
+  }
+
+  &.icon-white-puzzle-piece {
+    background-image: url(images/svg/icon-white-puzzle-piece.svg)
+  }
+
+  &.icon-white-reminders-notifications {
+    background-image: url(images/svg/icon-white-reminders-notifications.svg)
+  }
+
+  &.icon-white-retention {
+    background-image: url(images/svg/icon-white-retention.svg)
+  }
+
+  &.icon-white-retention-woman-employee {
+    background-image: url(images/svg/icon-white-retention-woman-employee.svg)
+  }
+
+  &.icon-white-rocket {
+    background-image: url(images/svg/icon-white-rocket.svg)
+  }
+
+  &.icon-white-security-lock {
+    background-image: url(images/svg/icon-white-security-lock.svg)
+  }
+
+  &.icon-white-security-verified-badge {
+    background-image: url(images/svg/icon-white-security-verified-badge.svg)
+  }
+
+  &.icon-white-send-path-enroll {
+    background-image: url(images/svg/icon-white-send-path-enroll.svg)
+  }
+
+  &.icon-white-strategy {
+    background-image: url(images/svg/icon-white-strategy.svg)
+  }
+
+  &.icon-white-tape-ruler {
+    background-image: url(images/svg/icon-white-tape-ruler.svg)
+  }
+
+  &.icon-white-target-goal {
+    background-image: url(images/svg/icon-white-target-goal.svg)
+  }
+
+  &.icon-white-video-call-chat {
+    background-image: url(images/svg/icon-white-video-call-chat.svg)
+  }
+
+  &.icon-white-video-game-potion {
+    background-image: url(images/svg/icon-white-video-game-potion.svg)
+  }
+
+  &.icon-white-women-employees {
+    background-image: url(images/svg/icon-white-women-employees.svg)
+  }
+}
