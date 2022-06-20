@@ -344,7 +344,6 @@ $sides: (top, bottom, left, right); // Leave this variable alone
   }
 }
 
-
 .w-80-percent {
   width: 80%;
   margin: auto;
@@ -379,6 +378,35 @@ $sides: (top, bottom, left, right); // Leave this variable alone
 
 .has-bottom-divider, .border-bottom {
   border-bottom: 1px solid $m-gray;
+}
+
+.has-vertical-divider {
+  background-image: linear-gradient($m-gray 33%, rgba(255,255,255,0) 0%);
+  background-position: left;
+  background-size: 1px 4px;
+  background-repeat: repeat-y;
+
+  @include media('<tablet') {
+    background-image: linear-gradient(to right, $m-gray 33%, rgba(255,255,255,0) 0%);
+    background-position: top;
+    background-repeat: repeat-x;
+    background-size: 4px 1px;
+  }
+}
+
+
+.has-vertical-divider-dashed {
+  background-image: linear-gradient($m-gray 33%, rgba(255,255,255,0) 0%);
+  background-position: left;
+  background-size: 1px 6px;
+  background-repeat: repeat-y;
+
+  @include media('<tablet') {
+    background-image: linear-gradient(to right, $m-gray 33%, rgba(255,255,255,0) 0%);
+    background-position: top;
+    background-repeat: repeat-x;
+    background-size: 6px 1px;
+  }
 }
 
 

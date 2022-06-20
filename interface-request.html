@@ -1,13 +1,178 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>HTML 5 Boilerplate</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-	<script src="index.js"></script>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Interface Request - ScalaBull Healthcare</title>
+
+  <link rel="apple-touch-icon" sizes="76x76" href="images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,400;1,500;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header id="main-header" class="main-header close" role="banner">
+    <div class="container">
+      <div class="header">
+        <div class="logo"><a href="https://www.scalabull.com/" title="Scalabull"><img src="images/logo-scalabull.png" alt="ScalaBull"></a></div>
+        <button class="mobile-btn mobile-btn--htx visible-xs">
+          <span>Toggle Menu</span>
+        </button>
+
+        <div class="nav-menu">
+          <ul>
+            <li><a href="https://scalabullhelp.zendesk.com/hc/en-us">Support</a></li>
+            <li><a href="#">Developer</a></li>
+          </ul>
+          <div><a class="btn btn-solid" href="#">Get Connected</a></div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="panel panel-hero">
+    <div class="container">
+      <div class="grid align-center">
+        <div class="col-md-6 col-sm-6">
+          <h1>Get Connected in 5 Simple Steps</h1>
+          <p class="margin-t-20">To send orders and receive results from within your EHR, your journey with us will follow this 5 step process. This should take less than 15 minutes of your time.</p>
+
+          <p class="margin-t-20">Representatives of labs or radiology providers, please request a quote from us at <a href="mailto:support@scalabull.com">support@scalabull.com</a>.</p>
+        </div>
+
+        <div class="col-md-6 col-sm-6">
+          <img src="images/bg-hero-interface-request.png" alt="Scalabull Interface Request" class="aligncenter w-60-percent">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="panel panel-small panel-gradient">
+    <div class="container">
+      <div class="grid align-center">
+        <div class="col-md-6 col-sm-6">
+          <h2 class="margin-t-20">1. Review Our Criteria</h2>
+          <p class="margin-t-20">To connect with us, we require that:</p>
+          
+          <p>A. You’ve worked with your lab or radiology partner for at least 3 months.</p>
+          <p>B. On average, you send more than 15 orders per month to your lab or radiology partner.</p>
+          <p>C. You know someone at the lab or radiology facility(for instance, a sales representative).</p>
+
+          <p class="margin-t-20">If you don’t meet some or all of these criteria, please submit a request, but note that we may have trouble creating a connection for you.</p>
+        </div>
+
+        <div class="col-md-6 col-sm-6">
+          <img src="images/interface-request-step-1.png" alt="Review Criteria" class="aligncenter w-60-percent">
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+    <div class="panel panel-small">
+    <div class="container">
+      <div class="grid align-center direction-row-reverse">
+        <div class="col-md-6 col-sm-6">
+          <h2 class="margin-t-20">2. Submit Request</h2>
+          <p class="margin-t-20">Start the process by providing your contact information and the details of the interfaces you’d like us to create. For each interface, we’ll send an automated email outlining the next action you’ll need to take so that we can proceed.</p>
+        </div>
+
+        <div class="col-md-6 col-sm-6">
+          <img src="images/interface-request-step-2.png" alt="Submit Request" class="aligncenter w-70-percent">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="panel panel-small">
+    <div class="container">
+      <div class="grid align-center">
+        <div class="col-md-6 col-sm-6">
+          <h2 class="margin-t-20">3. Action Required</h2>
+          <p class="margin-t-20">Next, you’ll need to talk with each of your diagnostic service providers. The automated email you receive after your form submission will contain the following:</p>
+
+          <p>A. Instructions for how to tell your diagnostics service providers (laboratories or imaging providers) that you’d like to create an interface with your EHR.</p>
+          <p>B. A link where you can let us know once you’ve completed this step.</p>
+        </div>
+
+        <div class="col-md-6 col-sm-6">
+          <img src="images/interface-request-step-3.png" alt="Action Required" class="aligncenter w-90-percent">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="panel panel-small">
+    <div class="container">
+      <div class="grid align-center direction-row-reverse">
+        <div class="col-md-6 col-sm-6">
+          <h2 class="margin-t-20">4. Cost Approval</h2>
+          <p class="margin-t-20">Scalabull charges a fee for interfaces and your lab or radiology partner will almost always cover the cost. For practices that meet our criteria, connections will almost always be free (your lab or radiology provider will cover the cost).</p>
+
+          <p>Your lab/radiology provider will let you know once the cost is approved, at which point we can start connecting you.</p>
+        </div>
+
+        <div class="col-md-6 col-sm-6">
+          <img src="images/interface-request-step-4.png" alt="Cost Approval" class="aligncenter w-75-percent">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="panel panel-small">
+    <div class="container">
+      <div class="grid align-center">
+        <div class="col-md-6 col-sm-6">
+          <h2 class="margin-t-20">5. Setup Process</h2>
+          <p class="margin-t-20">Setups can range from days to weeks depending primarily on how busy your lab / rad is. We’ll provide automated status updates via email as your setup proceeds.</p>
+
+          <p>Once complete, the interface will either go live immediately or at a date scheduled by your service provider. Near this time, we’ll provide a link to your EHR’s training materials.</p>
+        </div>
+
+        <div class="col-md-6 col-sm-6">
+          <img src="images/interface-request-step-5.png" alt="Setup Process" class="aligncenter w-65-percent">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="panel has-decorative-dots">
+    <div class="container">
+      <div class="grid align-center">
+        <div class="col-md-6 col-sm-6">
+          <h3>Ready to get started?</h3>
+          <p class="margin-t-20"><a class="btn btn-solid" href="https://form.jotform.com/221155548060349">Request Interface (RXNT)</a></p>
+          <p><a class="btn btn-secondary" href="#">Request Interface (Other EHRs)</a></p>
+        </div>
+
+        <div class="col-md-6 col-sm-6">
+          <div class="box-padding has-extra-padding has-vertical-divider-dashed m-text-center">
+            <img src="images/icon-faq.png" alt="Help" width="60" height="53" />
+            <p class="text-lead margin-t-20"><strong>Still have questions?</strong></p>
+            <p><a href="https://scalabullhelp.zendesk.com/hc/en-us/articles/360062424713-New-Interfaces-FAQ-for-Practices" class="cta-link">Practice FAQ</a></p>
+            <p><a href="https://scalabullhelp.zendesk.com/hc/en-us/articles/360015966754-New-Interfaces-FAQ-For-Labs" class="cta-link">Diagnostics Providers FAQ</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">
+      <div class="logo"><a href="/" title="Scalabull"><img src="images/logo-scalabull.png" alt="ScalaBull"></a></div>
+      <div class="contact">
+        <p><a href="mailto:support@scalabull.com">support@scalabull.com</a> | <a href="tel:+1 866 846 8771">+1 866 846 8771</a></p>
+        <p>© 2022 Scalabull, Inc.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="js/scalabull.js"></script>
+</body>
 </html>

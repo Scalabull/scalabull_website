@@ -16,13 +16,17 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
+  <header id="main-header" class="main-header close" role="banner">
     <div class="container">
       <div class="header">
-        <div class="logo"><a href="/" title="Scalabull"><img src="images/logo-scalabull.png" alt="ScalaBull"></a></div>
+        <div class="logo"><a href="https://www.scalabull.com/" title="Scalabull"><img src="images/logo-scalabull.png" alt="ScalaBull"></a></div>
+        <button class="mobile-btn mobile-btn--htx visible-xs">
+          <span>Toggle Menu</span>
+        </button>
+
         <div class="nav-menu">
           <ul>
-            <li><a href="#">Support</a></li>
+            <li><a href="https://scalabullhelp.zendesk.com/hc/en-us">Support</a></li>
             <li><a href="#">Developer</a></li>
           </ul>
           <div><a class="btn btn-solid" href="#">Get Connected</a></div>
@@ -82,7 +86,7 @@
         <div class="col-md-4 col-sm-4 text-center">
           <div class="card">
             <img src="images/icon-procedures.png" class="aligncenter" style="max-height: 140px;">
-            <p class="margin-t-20 text-large">Vein to brain turnaround time, and how this differs across service providers</p>
+            <p class="margin-t-20 text-large">Which procedures your peers prefer, and which service providers offer them</p>
           </div>
         </div>
 
@@ -90,7 +94,7 @@
         <div class="col-md-4 col-sm-4 text-center">
           <div class="card">
             <img src="images/icon-quality-patient-experince.png" class="aligncenter" style="max-height: 140px;">
-            <p class="margin-t-20 text-large">Vein to brain turnaround time, and how this differs across service providers</p>
+            <p class="margin-t-20 text-large">What a quality patient experience looks like <br />  <br /></p>
           </div>
         </div>
 
@@ -101,21 +105,23 @@
   </div>
 
 
-  <div class="panel">
+  <div class="panel has-decorative-dots">
     <div class="container">
       <div class="grid align-center">
         <div class="col-md-6 col-sm-6">
           <h3>Ready to get started?</h3>
           <p class="text-large margin-t-20">Follow our 5 step process to connect your EHR with the lab or radiology provider of your choice.</p>
-          <p class="margin-t-20"><a class="btn btn-secondary" href="#">Network Map</a> <a href="#" class="cta-link margin-l-25 text-red text-large">Support</a></p>
+          <p class="margin-t-20"><a class="btn btn-secondary" href="network.html">Network Map</a> <a href="https://scalabullhelp.zendesk.com/hc/en-us" class="cta-link margin-l-25 text-red text-large">Support</a></p>
         </div>
 
         <div class="col-md-6 col-sm-6">
-          <img src="images/icon-chem-cylinder.png" alt="Help" width="60" height="67" />
-          <p class="text-lead margin-t-20"><strong>Have questions?</strong></p>
-          <p>See our FAQ for quick answers</p>
-          <p><a href="#" class="cta-link">Practice FAQ</a></p>
-          <p><a href="#" class="cta-link">Diagnostics Providers FAQ</a></p>
+          <div class="box-padding has-extra-padding has-vertical-divider-dashed m-text-center">
+            <img src="images/icon-chem-cylinder.png" alt="Help" width="60" height="67" />
+            <p class="text-lead margin-t-20"><strong>Have questions?</strong></p>
+            <p>See our FAQ for quick answers</p>
+            <p><a href="https://scalabullhelp.zendesk.com/hc/en-us/articles/360062424713-New-Interfaces-FAQ-for-Practices" class="cta-link">Practice FAQ</a></p>
+            <p><a href="https://scalabullhelp.zendesk.com/hc/en-us/articles/360015966754-New-Interfaces-FAQ-For-Labs" class="cta-link">Diagnostics Providers FAQ</a></p>
+          </div>
         </div>
       </div>
     </div>
@@ -131,24 +137,7 @@
     </div>
   </footer>
 
-  <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
-  <script src="js/slick.min.js"></script>
-
-  <script type="text/javascript">
-    jQuery(document).ready(function() {  
-      jQuery('.logo-slider').slick({
-        dots: true,
-        infinite: true,
-        speed: 300,
-        slidesToShow: 4,
-        adaptiveHeight: true,
-        autoplay: true,
-        autoplaySpeed: 5000,
-        arrows: false,
-        fade: false,
-        cssEase: 'linear'
-      });
-    });
-  </script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="js/scalabull.js"></script>
 </body>
 </html>

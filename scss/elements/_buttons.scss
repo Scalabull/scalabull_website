@@ -56,7 +56,7 @@ input[type='reset'] {
 
   &.btn-secondary {
     background-color: $orange;
-    background: linear-gradient(145deg, lighten($orange, 5%) 0%, darken($orange, 10%) 100%);
+    background: linear-gradient(145deg, lighten($orange, 10%) 0%, darken($orange, 10%) 100%);
     border: 1px solid $orange;
     box-shadow: none;
 
